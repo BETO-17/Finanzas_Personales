@@ -1,0 +1,26 @@
+/* Buttons.css */
+
+/* Estilo base del botón */
+button {
+    padding: 10px 20px;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#Registrar {
+    background-color: aqua;
+    color: white;
+}
+
+#Limpiar {
+    background-color: brown;
+    color: white;
+
+}
+
+/* Hover: cuando pasas el mouse */

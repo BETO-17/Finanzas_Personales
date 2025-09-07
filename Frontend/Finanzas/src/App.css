@@ -1,0 +1,14 @@
+header {
+    width: 100%;
+    text-align: center;
+}
+
+.Title {
+    font-family: sans-serif;
+}
+
+.Inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

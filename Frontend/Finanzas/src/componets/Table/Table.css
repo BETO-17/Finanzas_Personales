@@ -1,0 +1,41 @@
+/* Table.css */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Quita espacios entre celdas */
+    font-family: 'Red Hat Text', sans-serif;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Para que el border-radius funcione */
+}
+
+thead {
+    text-align: left;
+}
+
+thead th {
+    padding: 12px 15px;
+}
+
+tbody td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #e0e7ff;
+    transition: background-color 0.3s ease;
+}
+
+th,
+td {
+    font-size: 16px;
+}
