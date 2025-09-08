@@ -1,1 +1,14 @@
-backend/venv
+# Entorno virtual
+backend/venv/
+
+# Archivos de Django
+*.pyc
+__pycache__/
+
+
+# Archivos de VSCode / PyCharm
+.vscode/
+.idea/
+
+
+
