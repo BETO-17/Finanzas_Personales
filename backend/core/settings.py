@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'gestionFinanzasBD',   # 👈 cámbialo al nombre correcto de tu BD
+        'NAME': 'gestion_fin',   # 👈 cámbialo al nombre correcto de tu BD
         'USER': 'root',
         'PASSWORD': '12345678',
         'HOST': '127.0.0.1',

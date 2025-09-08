@@ -42,7 +42,7 @@ class Transaccion(models.Model):
     estado_transac = models.CharField(
        max_length=20,
        choices=ESTADO_TRANSACCION_CHOICES,
-       default='pendiente'   # Valor inicial para registros existentes)
+       default='Pendiente'   # Valor inicial para registros existentes
        )
     # Detalle adicional opcional
     descripcion = models.TextField(blank=True, null=True)
