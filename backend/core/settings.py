@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure--o(n4e96cafh&wog0zl=f$#$(i*960$vf_sbl-_vk+m8@yb%^#'
+SECRET_KEY = 'django-insecure-&xotqh_jp9)p53!j+@zh$-vkihq@-eu#14g)=8c0+o6xguw7z5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crud_fp.apps.CrudFpConfig',
 ]
 
 MIDDLEWARE = [
@@ -75,15 +76,8 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',   # Motor de base de datos
-        'NAME': 'gestionFinanzasBD',            # Nombre de tu BD en MySQL
-        'USER': 'root',             # Usuario de MySQL
-        'PASSWORD': '12345678',      # Contraseña de MySQL
-        'HOST': 'localhost',                    # Servidor (localhost si es tu máquina)
-        'PORT': '3307',                         # Puerto por defecto de MySQL
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
